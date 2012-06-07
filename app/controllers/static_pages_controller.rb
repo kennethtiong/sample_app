@@ -9,4 +9,8 @@ class StaticPagesController < ApplicationController
   def about
   end
   /that there is no actions here indicates that it is truly static/
+
+  def contact
+  end
+
 end
