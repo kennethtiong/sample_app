@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
+  # replaces get "users/new" because this line is like magic and does a lot of the code to get REST to work
 
   root to: 'static_pages#home'
 
