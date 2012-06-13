@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
   # VALID_EMAIL_REGEX - because it starts with a capital letter, it is defined as a constant
 
 
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
 end
